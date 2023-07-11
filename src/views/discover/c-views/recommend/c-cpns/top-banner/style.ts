@@ -1,7 +1,7 @@
-import { styled } from 'styled-components'
+import styled from 'styled-components'
 
 interface BannerProps {
-  bgImage?: string
+  bgImage?: any
 }
 
 export const BannerWrapper = styled.div<BannerProps>`
@@ -61,12 +61,14 @@ export const BannerRight = styled.a.attrs({
   height: 270px;
   background: url(${require('@/assets/img/download.png')});
 `
+
 export const BannerControl = styled.div`
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  height: 63px;
 
   .btn {
     position: absolute;

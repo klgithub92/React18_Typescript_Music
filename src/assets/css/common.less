@@ -62,3 +62,13 @@ button {
 .sprite_playlist {
   background: url(../img/playlist_sprite.png) no-repeat 0 9999px;
 }
+
+// 覆盖播放歌词显示的antd样式
+.ant-message .ant-message-notice-content {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 610px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #fff;
+}

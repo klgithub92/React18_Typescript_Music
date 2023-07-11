@@ -6,7 +6,7 @@ interface IProps {
   children?: ReactNode
 }
 
-export interface IBannerData {
+interface IBannerData {
   imageUrl: string
   targetId: number
   targetType: number
